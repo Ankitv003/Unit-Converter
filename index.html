@@ -1,4 +1,4 @@
-<html>
+<html data-theme="dark">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -11,6 +11,12 @@
   <body>
     <div class="container">
       <div class="hero-container">
+        <button
+          class="toggle-mode"
+          type="button"
+          data-theme-toggle
+          aria-label="Change to light theme"
+        ></button>
         <h1 class="hero-header">Metric/Imperial Unit Conversion</h1>
         <input class="hero-input" type="number" />
         <button class="hero-btn">Convert</button>
@@ -18,15 +24,15 @@
       <div class="content">
         <div class="content-item">
           <h2>Length (Meter/Feet)</h2>
-          <p class="content-meter"></p>
+          <p class="content-meter para"></p>
         </div>
         <div class="content-item">
           <h2>Volume (Liters/Gallons)</h2>
-          <p class="content-volume"></p>
+          <p class="content-volume para"></p>
         </div>
         <div class="content-item">
           <h2>Mass (Kilograms/Pounds)</h2>
-          <p class="content-mass"></p>
+          <p class="content-mass para"></p>
         </div>
       </div>
     </div>

@@ -9,6 +9,43 @@ input::-webkit-inner-spin-button {
 input[type="number"] {
   -moz-appearance: textfield;
 }
+[data-theme="light"] {
+  body {
+    background-color: #f4f4f4;
+  }
+
+  .hero-container {
+    width: 100%;
+    z-index: 1;
+  }
+  .toggle-mode {
+    background-color: #f4f4f4;
+    z-index: 2;
+  }
+}
+
+[data-theme="dark"] {
+  body {
+    background-color: #1f2937;
+  }
+  .hero-container {
+    width: 100%;
+  }
+  .content {
+    background-color: #1f2937;
+  }
+  .content-item {
+    background-color: #273549;
+    color: #ccc1ff;
+  }
+  .para {
+    color: white;
+  }
+
+  .toggle-mode {
+    background-color: #273549;
+  }
+}
 
 body {
   margin: 0;
@@ -80,4 +117,16 @@ body {
   width: 600px;
   margin: 0 auto;
   height: 80px;
+}
+
+.toggle-mode {
+  text-align: center;
+  width: 50px;
+  border-radius: 10px;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  border-top-left-radius: 3px;
+  border: none;
+  padding: 10px 0;
+  align-self: flex-end;
 }
